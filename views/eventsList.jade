@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  form(action="/events",method="post")
+    h1= "My Events"
+    br
+    label Name
+    br
+    input(type='text',name='name')  
+    | 
+    input(type='submit') Add 
+  ul
+    - each event in events
+      ul= event.name
+        |  
+        a(href="/events/"+event._id,class="btn") Edit
+        |  | 
+        a(href="/events/"+event._id+"/delete",onclick="return confirm('are you sure?')",class="btn btn-danger") Delete
+  

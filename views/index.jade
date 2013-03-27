@@ -1,5 +1,25 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 Are You Free?
+  h3 Welcome to your online organizer.
+
+  - if(locals.user)
+    p You are logged in
+    p 
+      a(href="/logout") Logout
+  - else
+      p= message
+      form(action='/',method='post').form-horizontal
+        .control-group
+          label.control-label(for='inputEmail') Email
+            .controls
+              input#inputEmail(type='text', placeholder='Email', name='Email', value=email)
+        .control-group
+          label.control-label(for='inputPassword') Password
+          .controls
+            input#inputPassword(type='password', placeholder='Password', name='Password')
+        .control-group
+          .controls
+            a(href="/register", class="btn") Register
+            button.btn-primary(type='submit') Sign me in!

@@ -2,6 +2,20 @@ doctype 5
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
   body
+    .navbar.navbar-inverse
+      .navbar-inner
+          a.brand(href='/') AYF?
+          ul.nav
+            li.active
+              a(href='/') Home
+               - if(locals.user)
+            li
+              a(href='/meetingGroups') My Meeting Groups
+            li
+              a(href='/events') My Events
+              -else
     block content
+
+

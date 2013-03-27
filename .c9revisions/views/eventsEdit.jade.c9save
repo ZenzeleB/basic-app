@@ -1,0 +1,2 @@
+{"ts":1363814184562,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1363814196188,"patch":[[{"diffs":[[1,"extends layout\n\nblock content\n  form(action=\"/events/\"+meetingGroup._id,method=\"post\")\n    label Name\n    input(type='text',name='name',value=meetingGroup.name)\n    input(type='text',name='webUrl',value=meetingGroup.webUrl)\n    input(type='submit') Update"]],"start1":0,"start2":0,"length1":0,"length2":255}]],"length":255,"saved":false}

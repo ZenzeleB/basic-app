@@ -1,0 +1,22 @@
+extends layout
+
+block content
+
+  form(action="/meetingGroups",method="post")
+    h1= "My Meeting Groups"
+    br
+    label Name
+    br
+    input(type='text',name='name')
+    | 
+    input(type='submit') Add 
+  ul
+    - each meetingGroup in meetingGroups
+      ul= meetingGroup.name
+        |  
+        a(href="/meetingGroups/"+meetingGroup._id,class="btn") Edit
+        |  | 
+        a(href="/meetingGroups/"+meetingGroup._id+"/delete",onclick="return confirm('Are You Sure?')",class="btn btn-danger") Delete
+
+
+  

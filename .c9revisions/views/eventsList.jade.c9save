@@ -1,0 +1,18 @@
+{"ts":1363814201500,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1363814223455,"patch":[[{"diffs":[[1,"extends layout\n\nblock content\n  form(action=\"/events\",method=\"post\")\n    label Name\n    input(type='text',name='name')\n    input(type='submit') Add \n  ul\n    - each meetingGroup in meetingGroups\n      ul= meetingGroup.name\n        |  \n        a(href=\"/meetingGroups/\"+meetingGroup._id,class=\"btn\") Edit\n        |  | \n        a(href=\"/meetingGroups/\"+meetingGroup._id+\"/delete\",onclick=\"return confirm('are you sure?')\",class=\"btn btn-danger\") Delete\n  "]],"start1":0,"start2":0,"length1":0,"length2":452}]],"length":452,"saved":false}
+{"ts":1363814243018,"patch":[[{"diffs":[[0,"ach "],[-1,"meetingGroup in meetingGroup"],[1,"event in event"],[0,"s\n  "]],"start1":161,"start2":161,"length1":36,"length2":22}]],"length":438,"saved":false}
+{"ts":1363814248628,"patch":[[{"diffs":[[0,"    ul= "],[-1,"meetingGroup"],[1,"event"],[0,".name\n  "]],"start1":183,"start2":183,"length1":28,"length2":21}]],"length":431,"saved":false}
+{"ts":1363814254789,"patch":[[{"diffs":[[0,"   a(href=\"/"],[-1,"meetingGroup"],[1,"event"],[0,"s/\"+meetingG"]],"start1":219,"start2":219,"length1":36,"length2":29}]],"length":424,"saved":false}
+{"ts":1363814258403,"patch":[[{"diffs":[[0,"=\"/events/\"+"],[-1,"meetingGroup"],[1,"event"],[0,"._id,class=\""]],"start1":228,"start2":228,"length1":36,"length2":29}]],"length":417,"saved":false}
+{"ts":1363814263033,"patch":[[{"diffs":[[0,"(href=\"/"],[-1,"meetingGroup"],[1,"event"],[0,"s/\"+meet"]],"start1":291,"start2":291,"length1":28,"length2":21}]],"length":410,"saved":false}
+{"ts":1363814269200,"patch":[[{"diffs":[[0,"s/\"+"],[-1,"meetingGroup"],[1,"event"],[0,"._id"]],"start1":304,"start2":304,"length1":20,"length2":13}]],"length":403,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1363816990538,"patch":[[{"diffs":[[0,"'name')\n"],[1,"    |\n"],[0,"    inpu"]],"start1":111,"start2":111,"length1":16,"length2":22}]],"length":409,"saved":false}
+{"ts":1363817012213,"patch":[[{"diffs":[[0,"e')\n    "],[-1,"|"],[1,"\n    |\n    "],[0,"\n    inp"]],"start1":115,"start2":115,"length1":17,"length2":27}]],"length":419,"saved":false}
+{"ts":1363817053969,"patch":[[{"diffs":[[0,"='name')"],[-1,"\n "],[0,"   \n    "]],"start1":110,"start2":110,"length1":18,"length2":16},{"diffs":[[0,"  |\n"],[-1,"    \n"],[0,"    "]],"start1":124,"start2":124,"length1":13,"length2":8}]],"length":412,"saved":false}
+{"ts":1363817082354,"patch":[[{"diffs":[[0,"  \n    |"],[1," "],[0,"\n    inp"]],"start1":119,"start2":119,"length1":16,"length2":17}]],"length":413,"saved":false}
+{"ts":1363817221686,"patch":[[{"diffs":[[0,"\"post\")\n"],[1,"    h1= \"My Events\"\n"],[0,"    labe"]],"start1":61,"start2":61,"length1":16,"length2":36}]],"length":433,"saved":false}
+{"ts":1363817245371,"patch":[[{"diffs":[[0,"Events\"\n"],[1,"    | \n"],[0,"    labe"]],"start1":81,"start2":81,"length1":16,"length2":23}]],"length":440,"saved":false}
+{"ts":1363817266347,"patch":[[{"diffs":[[0,"Events\"\n    "],[-1,"| "],[1,"br"],[0,"\n    label N"]],"start1":81,"start2":81,"length1":26,"length2":26}]],"length":440,"saved":false}
+{"ts":1363817277584,"patch":[[{"diffs":[[0,"name')  "],[-1," "],[1,"\n    br"],[0,"\n    | \n"]],"start1":139,"start2":139,"length1":17,"length2":23}]],"length":446,"saved":false}
+{"ts":1363817285065,"patch":[[{"diffs":[[0,"ame')  \n"],[-1,"    br\n"],[0,"    | \n "]],"start1":140,"start2":140,"length1":23,"length2":16}]],"length":439,"saved":false}
+{"ts":1363817288897,"patch":[[{"diffs":[[0," label Name\n"],[1,"    br\n"],[0,"    input(ty"]],"start1":99,"start2":99,"length1":24,"length2":31}]],"length":446,"saved":false}

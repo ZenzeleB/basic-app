@@ -1,0 +1,3 @@
+{"ts":1363811124425,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1363811200088,"patch":[[{"diffs":[[1,"extends layout\n\nblock content\n  form(action=\"/meetingGroups/\"+meetingGroup._id,method=\"post\")\n    label Name\n    input(type='text',name='name',value=meetingGroup.name)\n    input(type='submit') Update\n  "]],"start1":0,"start2":0,"length1":0,"length2":202}]],"length":202,"saved":false}
+{"ts":1363811892771,"patch":[[{"diffs":[[0,"p.name)\n"],[1,"    input(type='text',name='webUrl',value=meetingGroup.webUrl)\n"],[0,"    inpu"]],"start1":160,"start2":160,"length1":16,"length2":79}]],"length":265,"saved":false}

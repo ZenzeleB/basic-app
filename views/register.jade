@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 Are You Free?
+  h3 Create An Account
+  form.form-horizontal(method="POST",action="/register")
+    .control-group
+      label.control-label(for='inputEmail') Email
+        .controls
+          input#inputEmail(type='text', placeholder='Email', name="email")
+    .control-group
+      label.control-label(for='inputPassword') Password
+      .controls
+        input#inputPassword(type='password', placeholder='Password', name="password")
+    .control-group
+      .controls
+        button.btn-primary(type='submit') Register

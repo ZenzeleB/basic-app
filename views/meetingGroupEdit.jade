@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  form(action="/meetingGroups/"+meetingGroup._id,method="post")
+    label Name
+    input(type='text',name='name',value=meetingGroup.name)
+    input(type='text',name='webUrl',value=meetingGroup.webUrl)
+    input(type='submit') Update
+  
